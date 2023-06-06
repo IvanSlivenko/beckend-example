@@ -6,7 +6,7 @@ const app = require('./app')
 const DB_HOST =
   "mongodb+srv://ivan8822:iv07092006sl@cluster0.5m4an.mongodb.net/my-movies?retryWrites=true&w=majority"
 
-  // зв'язуємось з базою данних
+  // зв'язуємось з базою данних !!!
 mongoose.connect(DB_HOST)
   .then(() => { 
     app.listen(3000);
