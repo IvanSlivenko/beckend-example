@@ -2,6 +2,9 @@ const express = require("express");
 const logger = require("morgan");
 const cors = require("cors");
 
+// Локально додаємо до змінних оточень вміст .env
+require("dotenv").config()
+
 const moviesRouter = require("./routes/api/movies-routes");
 const contactsRouter = require("./routes/api/contacts-routes");
 
